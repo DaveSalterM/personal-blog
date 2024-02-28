@@ -7,6 +7,7 @@ const userNameSpan = document.querySelector('#user-name');
 const userPasswordSpan = document.querySelector('#blog-title');
 const userPostInputSpan = document.querySelector('#post-input');
 
+
 // renderLastRegistered();
 
 
@@ -28,7 +29,9 @@ function displayMessage(type, message) {
 // }
 
 function redirect() {
-    window.location.href = "/blog.html";
+    window.location.href = "blog.html";
+
+    // location.replace("/blog.html");
     }
     
 
