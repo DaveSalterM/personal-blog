@@ -7,22 +7,30 @@ const userNameSpan = document.querySelector('#user-name');
 const userPasswordSpan = document.querySelector('#blog-title');
 const userPostInputSpan = document.querySelector('#post-input');
 
-renderLastRegistered();
+// renderLastRegistered();
+
+
 
 function displayMessage(type, message) {
   msgDiv.textContent = message;
   msgDiv.setAttribute('class', type);
 }
 
-function renderLastRegistered() {
-  const username = localStorage.getItem('username');
-  const blogtitle = localStorage.getItem('blogtitle');
-  const postinput = localStorage.getItem('postinput');
+// function renderLastRegistered() {
+//   const username = localStorage.getItem('username');
+//   const blogtitle = localStorage.getItem('blogtitle');
+//   const postinput = localStorage.getItem('postinput');
 
-  if (!username || !blogtitle || !postinput) {
-    return;
-  }
-}
+//   if (!username || !blogtitle || !postinput) {
+//     return;
+//   }
+
+// }
+
+function redirect() {
+    window.location.href = "/blog.html";
+    }
+    
 
 postButton.addEventListener('click', function (event) {
   event.preventDefault();
@@ -38,13 +46,11 @@ postButton.addEventListener('click', function (event) {
  } else if (postinput === '') {
     displayMessage('error', "Blog form can't be blank");
 
-    
   } else {
-    displayMessage('');
-
+   
+    redirect();
     localStorage.setItem('username', username);
     localStorage.setItem('blogtitle', blogtitle);
-    localStorage.setItem('postinput', postInput);
-    renderLastRegistered();
+    localStorage.setItem('postinput', postinput);
   }
 });
