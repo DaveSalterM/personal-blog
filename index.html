@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <title>My Personal Blog</title>
+
+</head>
+
+<body>
+    <div class="clearfix">
+      <div class="card">
+        <h2>The Blog Spot</h2>
+        <form method="POST">
+          <div class="input-group">
+            <label for="username">User Name</label>
+            <input type="text" name="username" id="username" placeholder="Who's there?" />
+          </div>
+          <div class="input-group">
+            <label for="blogtitle">Title</label>
+            <input type="text" name="blogtitle" id="blogtitle" placeholder="What's this all about anyway?" />
+          </div>
+          <div class="input-group">
+            <label for="postinput">Post Your Thoughts Here</label>
+            <input type="text" name="postinput" id="postinput" placeholder="What's rattling around in that head of yours?" />
+          </div>
+          <div id="msg"></div>
+          <button id="postbtn">Send it!</button>
+        </form>
+      </div>
+      
+    </div>
+    
+<script src="assets/js/form.js"></script>
+
+</body>
+</html>
