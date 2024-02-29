@@ -1,17 +1,8 @@
-let username = localStorage.getItem(`username`);
 
+  const username = document.querySelector('#username');
+  const blogtitle = document.querySelector('#blogtitle');
+  const postinput = document.querySelector('#postinput');
 
-
-function postBlogToPage() {
-  const username = localStorage.getItem('username');
-  const blogtitle = localStorage.getItem('blogtitle');
-  const postinput = localStorage.getItem('postinput');
-
-  if (!username || !blogtitle || !postinput) {
-    return;
-  }
-
-  userNameSpan.textContent = username;
-  userBlogTitleSpan.textContent = blogtitle;
-  userPostInputSpan.textContent = postInput;
-}
+  username.textContent = localStorage.getItem("username");
+  blogtitle.textContent = localStorage.getItem("blogtitle");
+  postinput.textContent = localStorage.getItem("postinput");
