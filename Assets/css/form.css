@@ -4,7 +4,6 @@
     --accent: #c6cfd1;
 }
 
-
 *,
 *::before,
 *::after {
@@ -92,6 +91,15 @@ input:hover {
   content: " ";
   display: block;
   clear: both;
+}
+
+.footer {
+  text-align: center;
+  color: #c6cfd1;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
 }
 
 #msg {

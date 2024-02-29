@@ -14,20 +14,19 @@ const userBlogTitleSpan = document.querySelector('#blog-title');
 
 const userPostInputSpan = document.querySelector('#post-input');
 
-
+// Error message function
 
 function displayMessage(type, message) {
   msgDiv.textContent = message;
   msgDiv.setAttribute('class', type);
 }
 
-
+// Botton to submit blog post and redirect to next page
 
 function redirect() {
     window.location.href = "blog.html";
     }
     
-
 postButton.addEventListener('click', function (event) {
   event.preventDefault();
 
@@ -44,7 +43,7 @@ postButton.addEventListener('click', function (event) {
 
   } else {
    
-    
+// Log information input to local storage    
     localStorage.setItem('username', JSON.stringify(username));
     localStorage.setItem('blogtitle', JSON.stringify (blogtitle));
     localStorage.setItem('postinput', JSON.stringify(postinput));
