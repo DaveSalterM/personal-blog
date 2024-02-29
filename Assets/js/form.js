@@ -1,11 +1,19 @@
 const userNameInput = document.querySelector('#username');
+
 const blogTitleInput = document.querySelector('#blogtitle');
+
 const postInput = document.querySelector('#postinput');
+
 const postButton = document.querySelector('#postbtn');
+
 const msgDiv = document.querySelector('#msg');
+
 const userNameSpan = document.querySelector('#user-name');
+
 const userBlogTitleSpan = document.querySelector('#blog-title');
+
 const userPostInputSpan = document.querySelector('#post-input');
+
 
 
 function displayMessage(type, message) {
