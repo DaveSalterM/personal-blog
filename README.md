@@ -1,16 +1,15 @@
 # personal-blog
 
-# css-portfolio
-Week 1 Challenge 2 CSS Portfolio
+Week 2 Challenge 4 Personal Blog
 
 
 ## Description
 
-This project was designed to test my understanding of HTML and CSS. It showcases previous projects with room for future projects and serves as a personal portfolio. Building this project was useful in understanding resizing for various screen formats.
+This project was designed to test my understanding of JavaScript and Local Data storage. With this tool I am able to enter data and fetch it from local storage to implement on my webpage.
 
 ## Usage
 
-https://davesalterm.github.io/css-portfolio/
+https://davesalterm.github.io/personal-blog/
 
 ![](./Assets/images/screenshot.png)
 
