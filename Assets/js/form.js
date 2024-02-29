@@ -4,12 +4,8 @@ const postInput = document.querySelector('#postinput');
 const postButton = document.querySelector('#postbtn');
 const msgDiv = document.querySelector('#msg');
 const userNameSpan = document.querySelector('#user-name');
-const userPasswordSpan = document.querySelector('#blog-title');
+const userBlogTitleSpan = document.querySelector('#blog-title');
 const userPostInputSpan = document.querySelector('#post-input');
-
-
-// renderLastRegistered();
-
 
 
 function displayMessage(type, message) {
@@ -17,21 +13,10 @@ function displayMessage(type, message) {
   msgDiv.setAttribute('class', type);
 }
 
-// function renderLastRegistered() {
-//   const username = localStorage.getItem('username');
-//   const blogtitle = localStorage.getItem('blogtitle');
-//   const postinput = localStorage.getItem('postinput');
 
-//   if (!username || !blogtitle || !postinput) {
-//     return;
-//   }
-
-// }
 
 function redirect() {
     window.location.href = "blog.html";
-
-    // location.replace("/blog.html");
     }
     
 
@@ -51,9 +36,12 @@ postButton.addEventListener('click', function (event) {
 
   } else {
    
+    
+    localStorage.setItem('username', JSON.stringify(username));
+    localStorage.setItem('blogtitle', JSON.stringify (blogtitle));
+    localStorage.setItem('postinput', JSON.stringify(postinput));
+    console.log(localStorage)
     redirect();
-    localStorage.setItem('username', username);
-    localStorage.setItem('blogtitle', blogtitle);
-    localStorage.setItem('postinput', postinput);
   }
 });
+
